@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="calculator">
+     <div id="screen">
+         <span id="screen-content"></span>
+     </div>
+      <div id="main-body">
+        <div id="oprator-buttons">
+            <button class="oprator-button"  onclick="setOperator('+')" id="btn-add">+</button>
+            <button class="oprator-button"  onclick="setOperator('-')" id="btn-minus">-</button>
+            <button class="oprator-button"  onclick="setOperator('x')" id="btn-multiply">x</button>
+            <button class="oprator-button"  onclick="setOperator('/')" id="btn-divide">/</button>
+        </div>
+        <div id="numbers-body">
+            <div id="numbers-div">
+                <button class="numbers-button" onclick="setCurrentNumber(7)" id="btn-7">7</button>
+                <button class="numbers-button" onclick="setCurrentNumber(8)" id="btn-8">8</button>
+                <button class="numbers-button" onclick="setCurrentNumber(9)" id="btn-9">9</button>
+                <button class="numbers-button" onclick="setCurrentNumber(4)" id="btn-4">4</button>
+                <button class="numbers-button" onclick="setCurrentNumber(5)" id="btn-5">5</button>
+                <button class="numbers-button" onclick="setCurrentNumber(6)" id="btn-6">6</button>
+                <button class="numbers-button" onclick="setCurrentNumber(1)" id="btn-1">1</button>
+                <button class="numbers-button" onclick="setCurrentNumber(2)" id="btn-2">2</button>
+                <button class="numbers-button" onclick="setCurrentNumber(3)" id="btn-3">3</button>
+                <button class="numbers-button" onclick="setCurrentNumber(0)" id="btn-0">0</button>
+                <button class="numbers-button" id="btn-dot">.</button>
+                <button class="numbers-button" onclick="clearAll()" id="btn-ac">AC</button>
+            </div>
+            <div id="equal-div">
+                <button id="btn-equal">=</button>
+            </div>
+
+        </div>
+        </div>
+    </div>
+  
+    
+ 
+
+
+<script src="calc.js"></script>
+    
+</body>
+</html>
